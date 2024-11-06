@@ -25,9 +25,9 @@ body {
 }
 
 h1 {
-    font-size: 3.8rem;
+    font-size: 2.8rem;
     margin-bottom: 60px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 p {
@@ -85,14 +85,7 @@ p:last-of-type:hover {
 
 
 
-<div class="arrow-container">
-    <h1>Exemplo de Título</h1>
-    <p>Esse é um exemplo de parágrafo.</p>
-    <h2>Valor da Transferência</h2>
-    <hr>
-    <p class="link">Clique aqui para mais detalhes</p>
-    <div class="circle">&#8594;</div> <!-- Seta para direita dentro do círculo -->
-</div>
+
 </style>
 </body>
 </html>
