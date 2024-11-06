@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fbfcfb;
+    margin: 20px 0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #555;
+    width: 100%;
+    margin: 20px 0;
+}
+
+p:last-of-type {
+    font-size: 1rem;
+    color: #bb61d6;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+p:last-of-type:hover {
+    color: #d86ef8;
+}
+
+.arrow-container {
+    position: relative;
+    width: 100%; /* Largura total da tela */
+    height: 100vh; /* Altura total da tela */
+}
+
+.circle {
+    position: fixed; /* Fixa o círculo no lugar, ideal para mobile */
+    right: 20px; /* Ajusta a distância da borda direita */
+    bottom: 20px; /* Ajusta a distância da borda inferior */
+    width: 50px; /* Tamanho do círculo */
+    height: 50px;
+    background-color: #8d0592;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+</style>
+</head>
+<body>
+
+<div class="arrow-container">
+    <h1>Exemplo de Título</h1>
+    <p>Esse é um exemplo de parágrafo.</p>
+    <h2>Valor da Transferência</h2>
+    <hr>
+    <p class="link">Clique aqui para mais detalhes</p>
+    <div class="circle">&#8594;</div> <!-- Seta para direita dentro do círculo -->
+</div>
+
+</body>
+</html>
