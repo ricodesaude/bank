@@ -4,37 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nubank</title>
-    <link rel="stylesheet" href="styles.css">
-
-    <div class="arrow-container">
-        <div class="circle">
-          &#8594; <!-- Seta para a direita -->
-        </div>
-      </div>
     
-
     <style>
         body {
-            background-color: #000; /* Define o fundo como preto */
-            color: #fff; /* Define a cor do texto como branco para melhor contraste */
+            background-color: #000; /* Fundo preto */
+            color: #fff; /* Texto branco */
             font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .editable {
+            font-size: 24px;
+            color: #fff;
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: 5px;
+            outline: none; /* Remove o contorno azul ao editar */
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #444;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        p.limite-text {
+            text-align: left;
+        }
+
+        .arrow-container {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #5C16C5;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px; /* Posiciona a seta mais à direita */
+        }
+
+        /* Estilos para dispositivos móveis */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .editable {
+                font-size: 20px;
+            }
+
+            .circle {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
         }
     </style>
-
-    
-    
 </head>
 <body>
-    <h1>Qual é o valor da <br> transferência?</h1>
+    <h1>Qual é o valor da<br>transferência?</h1>
     <p contenteditable="true" class="editable">Saldo disponível: R$1000,00</p>
     <p contenteditable="true" class="editable">R$1000,00</p>
     
     <hr>
-    <P>Consultar meus limite pix </P>
+    <p class="limite-text">Consultar meu limite Pix</p>
+    
     <div class="arrow-container">
-    
-
-
-    
+        <div class="circle">&#8594;</div> <!-- Seta para a direita -->
+    </div>
 </body>
 </html>
